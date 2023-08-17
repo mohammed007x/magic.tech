@@ -1,0 +1,156 @@
+.reviews {
+  position: relative;
+}
+
+.reviews .reviews-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews .reviews-container .main-content .title {
+  text-align: center;
+}
+
+.reviews .reviews-container .main-content .title h1 {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.reviews .reviews-container .main-content .cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.5em;
+}
+
+.checked {
+  color: orange;
+  margin: 1.5px;
+  margin: 1em 0.1em;
+}
+
+.reviews .reviews-container .main-content .cards .card {
+  background-color: #090823;
+  border-radius: 14px;
+  padding: 2.5em;
+  position: relative;
+  max-width: 400px;
+  margin: 20px;
+  margin-bottom: 3em;
+}
+
+.reviews .reviews-container .main-content .cards .card:first-child::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-image: url("../../asset/face.jpg");
+  background-size: cover;
+  background-color: rgba(255, 0, 0, 0.249);
+  filter: drop-shadow(0px 18px 34px rgba(245, 167, 50, 0.2));
+  top: -2.8em;
+}
+
+.reviews .reviews-container .main-content .cards .card:last-child::before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-image: url("../../asset/face-3.png");
+  background-size: cover;
+  background-color: rgba(255, 0, 0, 0.249);
+  filter: drop-shadow(0px 18px 34px rgba(245, 167, 50, 0.2));
+  top: -2.8em;
+}
+
+.reviews .reviews-container .main-content .card .more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reviews .reviews-container .main-content .cards .card p {
+  padding-bottom: 1em;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #dfdfdfe0;
+  line-height: 30px;
+  /* or 178% */
+
+  font-feature-settings: "salt" on, "liga" off;
+
+  color: #ffffff;
+}
+
+.reviews
+  .reviews-container
+  .main-content
+  .cards
+  .card
+  .more-info
+  .personal-info
+  .name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.reviews
+  .reviews-container
+  .main-content
+  .cards
+  .card
+  .more-info
+  .personal-info
+  .email {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  font-feature-settings: "salt" on, "liga" off;
+
+  /* Natural/Grey-5 */
+
+  color: #999999;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .reviews .reviews-container .main-content .cards .card p {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+  .reviews .reviews-container .main-content .cards .card .more-info {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.revwies-effect {
+  position: absolute;
+  top: -30%;
+  left: -20%;
+}

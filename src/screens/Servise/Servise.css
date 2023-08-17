@@ -1,0 +1,67 @@
+.servise {
+  position: relative;
+}
+
+.servise .servise-center .main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servise .servise-center .main-content .title h1 {
+  font-family: var(--secoundFontFamily);
+  font-weight: 600;
+}
+
+.servise .servise-center .main-content .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.servise .servise-center .main-content .cards .card {
+  background-color: #090823;
+  border-radius: 0px 12px 0px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 10px 10px 15px 10px;
+  width: 250px;
+  transition: 0.4s;
+  margin: 20px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.servise .servise-center .main-content .cards .card img {
+  width: 250px;
+  height: 170px;
+  border-radius: 0px 12px 0px 0px;
+}
+
+.servise .servise-center .main-content .cards .card h3 {
+  margin: 15px 0px 3px 0px;
+  font-family: "Orbitron";
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.servise .servise-center .main-content .cards .card p {
+  margin: 0px;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.731);
+}
+
+.servise .servise-center .main-content .cards .card:hover {
+  transform: scale(1.1);
+}
+
+.effect-4 {
+  position: absolute;
+  bottom: 0px;
+  left: -30%;
+}

@@ -1,0 +1,81 @@
+.footer {
+  width: 100%;
+  background-color: #090823;
+  padding: 1.5em 0em;
+}
+
+.footer .footer-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer .footer-container .item {
+  margin: 1.5em;
+}
+
+.footer .footer-container .item:first-child {
+  align-self: center;
+}
+
+.footer .footer-container .item:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+}
+
+.footer .footer-container .item:not(:first-child) h3 {
+  font-family: var(--secoundFontFamily);
+}
+
+.footer .footer-container .item:not(:first-child) div,
+.footer .footer-container .item:not(:first-child) a,
+.footer .footer-container .item:first-child p {
+  font-size: 12px;
+  color: #e3e3e3;
+  line-height: 1.7em;
+}
+
+.footer .footer-container .contact-footer {
+  align-self: center;
+}
+
+.footer .footer-container .contact-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+}
+
+.footer .footer-container .contact-footer div i {
+  margin-right: 7px;
+}
+
+.footer .footer-container .item h3 {
+  padding: 0px;
+  margin-bottom: 6px;
+}
+
+.footer .footer-container .about-footer {
+  min-width: 40vw;
+  max-width: 400px;
+}
+
+.footer .footer-container .about-footer h1 {
+  padding: 0px;
+  max-width: 230px;
+  background-image: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0em;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--secoundFontFamily);
+  margin-bottom: 8px;
+}
+
+.footer .footer-container .about-footer p {
+  margin: 0px;
+  padding: 0px;
+}

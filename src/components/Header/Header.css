@@ -1,0 +1,209 @@
+.header {
+  width: 100vw;
+  position: fixed;
+  z-index: 999;
+  padding: 8px 0em;
+  height: 50px;
+  overflow-x: hidden;
+}
+
+.scroll {
+  background-color: #090823;
+}
+
+.container-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-header .logo h1 {
+  font-size: 1em;
+  font-family: var(--secoundFontFamily);
+}
+
+.container-header .links ul {
+  display: flex;
+}
+
+.container-header .links ul {
+  list-style-type: none;
+}
+
+.container-header .links ul li a {
+  color: var(--primaryColor);
+  text-decoration: none;
+  margin: 0px 0.8em;
+  font-size: 0.9em;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.container-header .links ul li a:hover {
+  cursor: pointer;
+  color: #d10ed1;
+}
+
+.effect-1 {
+  position: absolute;
+  top: -50%;
+  left: 25vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.visable {
+  display: block;
+}
+
+.swich-unclick {
+  display: none;
+  animation-name: slide;
+  animation-duration: 0.4s;
+}
+
+.swich .swich-line {
+  height: 3px;
+  width: 30px;
+  background-color: white;
+  margin: 3px;
+  border-radius: 30px;
+}
+
+.swich-click .swich-line-1 {
+  animation-name: rotate;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.swich-click .swich-line-2 {
+  animation-name: opacity;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.swich-click .swich-line-3 {
+  animation-name: rotateReverse;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+.menu {
+  animation-name: slideFromRight;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  background-color: #090823;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  border-radius: 0px 0px 5px 5px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+}
+
+.menu ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu ul li {
+  list-style-type: none;
+  padding: 7px 22px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu ul li:hover a {
+  cursor: pointer;
+  color: #d10ed1;
+  transition: 0.4s;
+}
+
+.menu ul li a {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Animation */
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(+100%);
+  }
+
+  100% {
+    transform: translateX(0% + 5vw);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(+6px) rotate(-45deg);
+  }
+}
+
+@keyframes rotateReverse {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-6px) rotate(45deg);
+  }
+}
+
+/* Responsive */
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .swich {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 550px) {
+  .swich {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+}

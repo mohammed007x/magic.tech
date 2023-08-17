@@ -1,0 +1,131 @@
+.log-in-admin {
+  height: 100vh;
+  background-color: var(--primaryColor);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.container-log-in {
+  width: 50vw;
+  min-width: 250px;
+  box-sizing: border-box;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-log-in .login {
+  width: 30vw;
+  min-width: 400px;
+  grid-area: login;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 222;
+  background-color: transparent;
+}
+
+.container-log-in .login h3.title {
+  margin: 5px 0px;
+}
+.container-log-in .login .text-input {
+  display: flex;
+  align-items: center;
+  width: 68%;
+}
+
+.container-log-in .login .text-input input {
+  height: 100%;
+  margin-left: 10px;
+  background: #e6e6e6;
+  height: 40px;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 5px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.container-log-in .login .text-input i {
+  color: #686868;
+}
+
+::placeholder {
+  color: #9a9a9a;
+}
+
+.container-log-in .login .login-btn {
+  width: 68%;
+  padding: 10px;
+  color: white;
+  background: linear-gradient(97.16deg, #d10ed1 12.04%, #10a3da 81.84%);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.log-in-effect {
+  position: absolute;
+}
+
+.log-in-effect-1 {
+  top: -40%;
+  left: -20%;
+}
+
+.log-in-effect-2 {
+  bottom: -40%;
+  right: -20%;
+}
+
+.container-log-in .login .sucsess {
+  text-align: center;
+  background-color: rgb(21, 122, 21);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px 0px;
+  border-radius: 5px;
+
+  margin: 4px 12px 12px 12px;
+  cursor: pointer;
+  margin-top: 6px;
+  animation-name: slide-animation-success;
+  animation-duration: 0.4s;
+}
+.container-log-in .login .fail {
+  position: absolute;
+  text-align: center;
+  background-color: rgb(207, 0, 0);
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.8em;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin: 4px 12px 12px 12px;
+  cursor: pointer;
+  animation-name: slide-animation-success;
+  animation-duration: 0.5s;
+  margin-top: 6px;
+  bottom: -100%;
+  min-width: 200px;
+}
+
+@keyframes slide-animation-success {
+  0% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}

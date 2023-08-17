@@ -1,0 +1,118 @@
+.about {
+  width: 100vw;
+}
+
+.about .about-center .main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .about-center .main-content .text {
+  /* width: calc(633.19em / 16 / 1.5);
+    height: calc(568em / 16 / 1.5); */
+  width: 40vw;
+  height: 38vw;
+  min-width: 260px;
+  min-height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0em 0em;
+  margin: 3em;
+}
+
+.about .about-center .main-content .text h1 {
+  margin: 0em;
+  font-size: 2em;
+  font-weight: 600;
+  font-family: var(--secoundFontFamily);
+  line-height: 1.4em;
+}
+
+.about .about-center .main-content .text h1 span {
+  background: linear-gradient(97.16deg, #f86cf8 12.04%, #64cef5 81.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.about .about-center .main-content .text p {
+  width: 90%;
+  font-size: 16;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.861);
+  font-size: 0.9em;
+  letter-spacing: 1.5px;
+}
+.about .about-center .main-content .images {
+  position: relative;
+  height: 20em;
+  width: 20em;
+  max-height: 280px;
+  min-height: 220px;
+  min-width: 240px;
+  margin-top: 3em;
+}
+
+.about .about-center .main-content .images .img-1 {
+  z-index: 2;
+  background-image: url("../../asset/aboutOne.png");
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 15em;
+  width: 15em;
+  border-radius: 50px 0px 0px 0px;
+  min-height: 150px;
+  min-width: 150px;
+}
+
+.about .about-center .main-content .images .img-2 {
+  border-radius: 50px 0px 0px 0px;
+  position: absolute;
+  background-image: url("../../asset/aboutTow.png");
+  background-size: cover;
+  top: -40px;
+  left: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 15em;
+  width: 15em;
+  min-height: 150px;
+  min-width: 150px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 700px) {
+  .about .about-center .main-content {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  .about .about-center .main-content .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about .about-center .main-content .text h1,
+  .about .about-center .main-content .text p {
+    text-align: center;
+  }
+
+  .about .about-center .main-content .text p {
+    width: 100%;
+  }
+
+  .about .about-center .main-content .images .img-2 {
+    top: 0px;
+  }
+}
+
+.effect-3 {
+  position: absolute;
+  bottom: -20%;
+  right: -20%;
+}

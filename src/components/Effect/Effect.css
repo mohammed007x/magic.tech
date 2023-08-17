@@ -1,0 +1,11 @@
+.effect {
+  width: 35em;
+  height: 37em;
+
+  background: radial-gradient(
+    37.26% 37.26% at 50% 50%,
+    rgba(170, 20, 240, 0.275) 0%,
+    rgba(170, 20, 240, 0) 100%
+  );
+  overflow-y: hidden;
+}

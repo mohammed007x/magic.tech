@@ -1,0 +1,48 @@
+{
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@tanstack/react-query": "^4.29.15",
+    "aos": "^2.3.4",
+    "firebase": "^9.22.2",
+    "history": "^5.3.0",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-calendar": "^4.3.0",
+    "react-hook-form": "^7.45.0",
+    "react-parallax-tilt": "^1.7.149",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "react-simple-typewriter": "^5.0.1",
+    "typewriter-effect": "^2.20.1",
+    "web-vitals": "^3.3.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
+}

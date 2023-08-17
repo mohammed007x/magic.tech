@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/magic.tech/static/css/main.a8df1ab8.css",
+    "main.js": "/magic.tech/static/js/main.bdd4a729.js",
+    "static/js/496.e96609a5.chunk.js": "/magic.tech/static/js/496.e96609a5.chunk.js",
+    "static/media/landing.png": "/magic.tech/static/media/landing.e3ce204f46cc7a93dedc.png",
+    "static/media/aboutOne.png": "/magic.tech/static/media/aboutOne.c0705e3ed56435e8f362.png",
+    "static/media/aboutTow.png": "/magic.tech/static/media/aboutTow.19ba64d6e51651f5307e.png",
+    "static/media/ai.png": "/magic.tech/static/media/ai.d6097f83c8a52b4048c0.png",
+    "static/media/web.png": "/magic.tech/static/media/web.19d82881d9f6c2d88987.png",
+    "static/media/app.png": "/magic.tech/static/media/app.2de03ccb699b0bf324f9.png",
+    "static/media/face-3.png": "/magic.tech/static/media/face-3.f25d6fc80972b9bb3813.png",
+    "static/media/admin.png": "/magic.tech/static/media/admin.60a7f2d2b1d1114efbc1.png",
+    "static/media/face.jpg": "/magic.tech/static/media/face.61d32d11e68e54094710.jpg",
+    "index.html": "/magic.tech/index.html",
+    "main.a8df1ab8.css.map": "/magic.tech/static/css/main.a8df1ab8.css.map",
+    "main.bdd4a729.js.map": "/magic.tech/static/js/main.bdd4a729.js.map",
+    "496.e96609a5.chunk.js.map": "/magic.tech/static/js/496.e96609a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8df1ab8.css",
+    "static/js/main.bdd4a729.js"
+  ]
+}
